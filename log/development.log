@@ -30,3 +30,12 @@ Processing by WebopsController#index as HTML
 Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 16887)
 
 
+Started GET "/" for ::1 at 2021-05-26 15:10:48 +0200
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WebopsController#index as HTML
+  Rendering webops/index.html.erb within layouts/application
+  Rendered webops/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 9310)
+
+
