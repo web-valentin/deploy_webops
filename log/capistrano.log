@@ -4,3 +4,131 @@
   INFO ---------------------------------------------------------------------------
  DEBUG [d58e897c] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
  DEBUG [d58e897c] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-05-26 12:10:49 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [84e62087] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [84e62087] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-05-26 12:18:10 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [fe83f87e] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [fe83f87e] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-05-26 12:22:24 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e74917e0] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [e74917e0] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [e74917e0] Finished in 7.900 seconds with exit status 0 (successful).
+ DEBUG [921c7070] Running /usr/bin/env which passenger as deploy@vm-lime.multimediatechnology.at
+ DEBUG [921c7070] Command: /usr/bin/env which passenger
+ DEBUG [921c7070] 	/usr/bin/passenger
+ DEBUG [921c7070] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [30d68234] Running /usr/bin/env mkdir -p /tmp as deploy@vm-lime.multimediatechnology.at
+ DEBUG [30d68234] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [30d68234] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-fb327cf676111f8b1898.sh 0.0%
+  INFO Uploading /tmp/git-ssh-fb327cf676111f8b1898.sh 100.0%
+  INFO [428f799f] Running /usr/bin/env chmod 700 /tmp/git-ssh-fb327cf676111f8b1898.sh as deploy@vm-lime.multimediatechnology.at
+ DEBUG [428f799f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-fb327cf676111f8b1898.sh )
+  INFO [428f799f] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [6601e727] Running /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD as deploy@vm-lime.multimediatechnology.at
+ DEBUG [6601e727] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-fb327cf676111f8b1898.sh" ; /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD )
+ DEBUG [6601e727] 	Warning: Permanently added 'github.com,140.82.121.3' (RSA) to the list of known hosts.
+ DEBUG [6601e727] 	git@github.com: Permission denied (publickey).
+ DEBUG [6601e727] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-05-26 12:23:50 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1f254592] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1f254592] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [1f254592] Finished in 6.912 seconds with exit status 0 (successful).
+ DEBUG [aa055759] Running /usr/bin/env which passenger as deploy@vm-lime.multimediatechnology.at
+ DEBUG [aa055759] Command: /usr/bin/env which passenger
+ DEBUG [aa055759] 	/usr/bin/passenger
+ DEBUG [aa055759] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [4df21a8d] Running /usr/bin/env mkdir -p /tmp as deploy@vm-lime.multimediatechnology.at
+ DEBUG [4df21a8d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [4df21a8d] Finished in 0.106 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-0d5862ab33f2e9085916.sh 0.0%
+  INFO Uploading /tmp/git-ssh-0d5862ab33f2e9085916.sh 100.0%
+  INFO [fa5f7fe1] Running /usr/bin/env chmod 700 /tmp/git-ssh-0d5862ab33f2e9085916.sh as deploy@vm-lime.multimediatechnology.at
+ DEBUG [fa5f7fe1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-0d5862ab33f2e9085916.sh )
+  INFO [fa5f7fe1] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [9da1eddb] Running /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD as deploy@vm-lime.multimediatechnology.at
+ DEBUG [9da1eddb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0d5862ab33f2e9085916.sh" ; /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD )
+ DEBUG [9da1eddb] 	Warning: Permanently added the RSA host key for IP address '140.82.121.4' to the list of known hosts.
+ DEBUG [9da1eddb] 	git@github.com: Permission denied (publickey).
+ DEBUG [9da1eddb] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-05-26 12:34:16 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [57e02dea] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [57e02dea] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [57e02dea] Finished in 5.763 seconds with exit status 0 (successful).
+ DEBUG [f63a279e] Running /usr/bin/env which passenger as deploy@vm-lime.multimediatechnology.at
+ DEBUG [f63a279e] Command: /usr/bin/env which passenger
+ DEBUG [f63a279e] 	/usr/bin/passenger
+ DEBUG [f63a279e] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [99e71b45] Running /usr/bin/env mkdir -p /tmp as deploy@vm-lime.multimediatechnology.at
+ DEBUG [99e71b45] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [99e71b45] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a5a3792d6bc7ab7a5966.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a5a3792d6bc7ab7a5966.sh 100.0%
+  INFO [3cd0639e] Running /usr/bin/env chmod 700 /tmp/git-ssh-a5a3792d6bc7ab7a5966.sh as deploy@vm-lime.multimediatechnology.at
+ DEBUG [3cd0639e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-a5a3792d6bc7ab7a5966.sh )
+  INFO [3cd0639e] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [3bc79a43] Running /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD as deploy@vm-lime.multimediatechnology.at
+ DEBUG [3bc79a43] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a5a3792d6bc7ab7a5966.sh" ; /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD )
+ DEBUG [3bc79a43] 	c60a07373971ca89490fe60409c8a0c5851e7c63	HEAD
+  INFO [3bc79a43] Finished in 1.327 seconds with exit status 0 (successful).
+  INFO [8fb97bb3] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared /home/deploy/deploy_webops/releases as deploy@vm-lime.multimediatechnology.at
+ DEBUG [8fb97bb3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared /home/deploy/deploy_webops/releases )
+  INFO [8fb97bb3] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [186e30bb] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared/log /home/deploy/deploy_webops/shared/tmp/pids /home/deploy/deploy_webops/shared/tmp/cache /home/deploy/deploy_webops/shared/tmp/sockets /home/deploy/deploy_webops/shared/vendor/bundle /home/deploy/deploy_webops/shared/.bundle /home/deploy/deploy_webops/shared/public/system /home/deploy/deploy_webops/shared/public/uploads /home/deploy/deploy_webops/shared/public/assets as deploy@vm-lime.multimediatechnology.at
+ DEBUG [186e30bb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared/log /home/deploy/deploy_webops/shared/tmp/pids /home/deploy/deploy_webops/shared/tmp/cache /home/deploy/deploy_webops/shared/tmp/sockets /home/deploy/deploy_webops/shared/vendor/bundle /home/deploy/deploy_webops/shared/.bundle /home/deploy/deploy_webops/shared/public/system /home/deploy/deploy_webops/shared/public/uploads /home/deploy/deploy_webops/shared/public/assets )
+  INFO [186e30bb] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [838843d6] Running [ -f /home/deploy/deploy_webops/current/REVISION ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [838843d6] Command: [ -f /home/deploy/deploy_webops/current/REVISION ]
+ DEBUG [838843d6] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [ab71842c] Running [ -f /home/deploy/deploy_webops/repo/HEAD ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [ab71842c] Command: [ -f /home/deploy/deploy_webops/repo/HEAD ]
+ DEBUG [ab71842c] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [21aac666] Running if test ! -d /home/deploy/deploy_webops; then echo "Directory does not exist '/home/deploy/deploy_webops'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [21aac666] Command: if test ! -d /home/deploy/deploy_webops; then echo "Directory does not exist '/home/deploy/deploy_webops'" 1>&2; false; fi
+ DEBUG [21aac666] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [31b347ce] Running /usr/bin/env git clone --mirror git@github.com:web-valentin/deploy_webops.git /home/deploy/deploy_webops/repo as deploy@vm-lime.multimediatechnology.at
+ DEBUG [31b347ce] Command: cd /home/deploy/deploy_webops && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a5a3792d6bc7ab7a5966.sh" ; /usr/bin/env git clone --mirror git@github.com:web-valentin/deploy_webops.git /home/deploy/deploy_webops/repo )
+ DEBUG [31b347ce] 	Cloning into bare repository '/home/deploy/deploy_webops/repo'...
+  INFO [31b347ce] Finished in 2.045 seconds with exit status 0 (successful).
+ DEBUG [ee7cb463] Running if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [ee7cb463] Command: if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi
+ DEBUG [ee7cb463] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [1aa63d73] Running /usr/bin/env git remote set-url origin git@github.com:web-valentin/deploy_webops.git as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1aa63d73] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a5a3792d6bc7ab7a5966.sh" ; /usr/bin/env git remote set-url origin git@github.com:web-valentin/deploy_webops.git )
+  INFO [1aa63d73] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [6dae6745] Running /usr/bin/env git remote update --prune as deploy@vm-lime.multimediatechnology.at
+ DEBUG [6dae6745] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a5a3792d6bc7ab7a5966.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6dae6745] 	Fetching origin
+  INFO [6dae6745] Finished in 1.310 seconds with exit status 0 (successful).
+ DEBUG [91ad0f67] Running if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [91ad0f67] Command: if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi
+ DEBUG [91ad0f67] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [b83aa9af] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210526103424 as deploy@vm-lime.multimediatechnology.at
+ DEBUG [b83aa9af] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a5a3792d6bc7ab7a5966.sh" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210526103424 )
+  INFO [b83aa9af] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [d6d66586] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/deploy_webops/releases/20210526103424 as deploy@vm-lime.multimediatechnology.at
+ DEBUG [d6d66586] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a5a3792d6bc7ab7a5966.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/deploy_webops/releases/20210526103424 )
+ DEBUG [d6d66586] 	fatal: not a valid object name: master
+ DEBUG [d6d66586] 	tar: 
+ DEBUG [d6d66586] 	This does not look like a tar archive
+ DEBUG [d6d66586] 	
+ DEBUG [d6d66586] 	tar: 
+ DEBUG [d6d66586] 	Exiting with failure status due to previous errors
+ DEBUG [d6d66586] 	
