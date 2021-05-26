@@ -1,0 +1,6 @@
+# Logfile created on 2021-05-26 12:07:59 +0200 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-05-26 12:07:59 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d58e897c] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [d58e897c] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
