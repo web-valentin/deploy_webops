@@ -132,3 +132,302 @@ and the repository exists.
  DEBUG [d6d66586] 	tar: 
  DEBUG [d6d66586] 	Exiting with failure status due to previous errors
  DEBUG [d6d66586] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:03:08 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0f9e90f6] Running [ -d $HOME/.rbenv/versions/3.0.1 ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [0f9e90f6] Command: [ -d $HOME/.rbenv/versions/3.0.1 ]
+ DEBUG [0f9e90f6] Finished in 60.075 seconds with exit status 0 (successful).
+ DEBUG [2da924d9] Running /usr/bin/env which passenger as deploy@vm-lime.multimediatechnology.at
+ DEBUG [2da924d9] Command: /usr/bin/env which passenger
+ DEBUG [2da924d9] 	/usr/bin/passenger
+ DEBUG [2da924d9] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [154345f1] Running /usr/bin/env mkdir -p /tmp as deploy@vm-lime.multimediatechnology.at
+ DEBUG [154345f1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [154345f1] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-c47175defffdd87550c6.sh 0.0%
+  INFO Uploading /tmp/git-ssh-c47175defffdd87550c6.sh 100.0%
+  INFO [95d5cbd1] Running /usr/bin/env chmod 700 /tmp/git-ssh-c47175defffdd87550c6.sh as deploy@vm-lime.multimediatechnology.at
+ DEBUG [95d5cbd1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-c47175defffdd87550c6.sh )
+  INFO [95d5cbd1] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [4b03380a] Running /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD as deploy@vm-lime.multimediatechnology.at
+ DEBUG [4b03380a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c47175defffdd87550c6.sh" ; /usr/bin/env git ls-remote git@github.com:web-valentin/deploy_webops.git HEAD )
+ DEBUG [4b03380a] 	c3793cef39b0b3903552a871ea0e40947a298111	HEAD
+  INFO [4b03380a] Finished in 1.386 seconds with exit status 0 (successful).
+  INFO [b006b835] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared /home/deploy/deploy_webops/releases as deploy@vm-lime.multimediatechnology.at
+ DEBUG [b006b835] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared /home/deploy/deploy_webops/releases )
+  INFO [b006b835] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [157facb7] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared/log /home/deploy/deploy_webops/shared/tmp/pids /home/deploy/deploy_webops/shared/tmp/cache /home/deploy/deploy_webops/shared/tmp/sockets /home/deploy/deploy_webops/shared/vendor/bundle /home/deploy/deploy_webops/shared/.bundle /home/deploy/deploy_webops/shared/public/system /home/deploy/deploy_webops/shared/public/uploads /home/deploy/deploy_webops/shared/public/assets as deploy@vm-lime.multimediatechnology.at
+ DEBUG [157facb7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/shared/log /home/deploy/deploy_webops/shared/tmp/pids /home/deploy/deploy_webops/shared/tmp/cache /home/deploy/deploy_webops/shared/tmp/sockets /home/deploy/deploy_webops/shared/vendor/bundle /home/deploy/deploy_webops/shared/.bundle /home/deploy/deploy_webops/shared/public/system /home/deploy/deploy_webops/shared/public/uploads /home/deploy/deploy_webops/shared/public/assets )
+  INFO [157facb7] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [7bf7d58b] Running [ -f /home/deploy/deploy_webops/current/REVISION ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [7bf7d58b] Command: [ -f /home/deploy/deploy_webops/current/REVISION ]
+ DEBUG [7bf7d58b] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [55936540] Running /usr/bin/env cat /home/deploy/deploy_webops/current/REVISION 2>/dev/null as deploy@vm-lime.multimediatechnology.at
+ DEBUG [55936540] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cat /home/deploy/deploy_webops/current/REVISION 2>/dev/null )
+ DEBUG [55936540] 	33e5736fd0deca2aff5cc35a06f70aee09d43b42
+ DEBUG [55936540] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [7631f108] Running [ -f /home/deploy/deploy_webops/repo/HEAD ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [7631f108] Command: [ -f /home/deploy/deploy_webops/repo/HEAD ]
+ DEBUG [7631f108] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/deploy_webops/repo
+ DEBUG [e1e05968] Running if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [e1e05968] Command: if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi
+ DEBUG [e1e05968] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [cd46c899] Running /usr/bin/env git remote set-url origin git@github.com:web-valentin/deploy_webops.git as deploy@vm-lime.multimediatechnology.at
+ DEBUG [cd46c899] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c47175defffdd87550c6.sh" ; /usr/bin/env git remote set-url origin git@github.com:web-valentin/deploy_webops.git )
+  INFO [cd46c899] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [cca16270] Running /usr/bin/env git remote update --prune as deploy@vm-lime.multimediatechnology.at
+ DEBUG [cca16270] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c47175defffdd87550c6.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cca16270] 	Fetching origin
+ DEBUG [cca16270] 	From github.com:web-valentin/deploy_webops
+   6d8dc4cc..c3793cef  main       -> main
+  INFO [cca16270] Finished in 1.435 seconds with exit status 0 (successful).
+ DEBUG [8a584a3c] Running if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [8a584a3c] Command: if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi
+ DEBUG [8a584a3c] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [c9a427ff] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210606150411 as deploy@vm-lime.multimediatechnology.at
+ DEBUG [c9a427ff] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c47175defffdd87550c6.sh" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210606150411 )
+  INFO [c9a427ff] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [afd80100] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/deploy_webops/releases/20210606150411 as deploy@vm-lime.multimediatechnology.at
+ DEBUG [afd80100] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c47175defffdd87550c6.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/deploy_webops/releases/20210606150411 )
+  INFO [afd80100] Finished in 1.038 seconds with exit status 0 (successful).
+ DEBUG [1148ae16] Running if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1148ae16] Command: if test ! -d /home/deploy/deploy_webops/repo; then echo "Directory does not exist '/home/deploy/deploy_webops/repo'" 1>&2; false; fi
+ DEBUG [1148ae16] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [b12971af] Running /usr/bin/env git rev-list --max-count=1 master as deploy@vm-lime.multimediatechnology.at
+ DEBUG [b12971af] Command: cd /home/deploy/deploy_webops/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c47175defffdd87550c6.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b12971af] 	33e5736fd0deca2aff5cc35a06f70aee09d43b42
+ DEBUG [b12971af] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [3e6ef46b] Running if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [3e6ef46b] Command: if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi
+ DEBUG [3e6ef46b] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [806bc204] Running /usr/bin/env echo "33e5736fd0deca2aff5cc35a06f70aee09d43b42" > REVISION as deploy@vm-lime.multimediatechnology.at
+ DEBUG [806bc204] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "33e5736fd0deca2aff5cc35a06f70aee09d43b42" > REVISION )
+  INFO [806bc204] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [1f71525d] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210606150411 /home/deploy/deploy_webops/releases/20210606150411/tmp /home/deploy/deploy_webops/releases/20210606150411/vendor /home/deploy/deploy_webops/releases/20210606150411/public as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1f71525d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210606150411 /home/deploy/deploy_webops/releases/20210606150411/tmp /home/deploy/deploy_webops/releases/20210606150411/vendor /home/deploy/deploy_webops/releases/20210606150411/public )
+  INFO [1f71525d] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [ff042064] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/log ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [ff042064] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/log ]
+ DEBUG [ff042064] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [efc936dd] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/log ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [efc936dd] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/log ]
+ DEBUG [efc936dd] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [f5a427e2] Running /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/log as deploy@vm-lime.multimediatechnology.at
+ DEBUG [f5a427e2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/log )
+  INFO [f5a427e2] Finished in 0.111 seconds with exit status 0 (successful).
+  INFO [4582780d] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/log /home/deploy/deploy_webops/releases/20210606150411/log as deploy@vm-lime.multimediatechnology.at
+ DEBUG [4582780d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/log /home/deploy/deploy_webops/releases/20210606150411/log )
+  INFO [4582780d] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [8d390c73] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/tmp/pids ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [8d390c73] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/tmp/pids ]
+ DEBUG [8d390c73] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [a54319cb] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/tmp/pids ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [a54319cb] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/tmp/pids ]
+ DEBUG [a54319cb] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [d3ece601] Running /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/tmp/pids as deploy@vm-lime.multimediatechnology.at
+ DEBUG [d3ece601] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/tmp/pids )
+  INFO [d3ece601] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [21c05c3c] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/tmp/pids /home/deploy/deploy_webops/releases/20210606150411/tmp/pids as deploy@vm-lime.multimediatechnology.at
+ DEBUG [21c05c3c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/tmp/pids /home/deploy/deploy_webops/releases/20210606150411/tmp/pids )
+  INFO [21c05c3c] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [3612c456] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/tmp/cache ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [3612c456] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/tmp/cache ]
+ DEBUG [3612c456] Finished in 0.101 seconds with exit status 1 (failed).
+ DEBUG [66c8be66] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/tmp/cache ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [66c8be66] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/tmp/cache ]
+ DEBUG [66c8be66] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [1a7d3c09] Running /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/tmp/cache as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1a7d3c09] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/tmp/cache )
+  INFO [1a7d3c09] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [d8545e0b] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/tmp/cache /home/deploy/deploy_webops/releases/20210606150411/tmp/cache as deploy@vm-lime.multimediatechnology.at
+ DEBUG [d8545e0b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/tmp/cache /home/deploy/deploy_webops/releases/20210606150411/tmp/cache )
+  INFO [d8545e0b] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [a56fdf98] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/tmp/sockets ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [a56fdf98] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/tmp/sockets ]
+ DEBUG [a56fdf98] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [4d307856] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/tmp/sockets ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [4d307856] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/tmp/sockets ]
+ DEBUG [4d307856] Finished in 0.059 seconds with exit status 1 (failed).
+  INFO [e373ad6d] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/tmp/sockets /home/deploy/deploy_webops/releases/20210606150411/tmp/sockets as deploy@vm-lime.multimediatechnology.at
+ DEBUG [e373ad6d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/tmp/sockets /home/deploy/deploy_webops/releases/20210606150411/tmp/sockets )
+  INFO [e373ad6d] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [13858757] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/vendor/bundle ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [13858757] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/vendor/bundle ]
+ DEBUG [13858757] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [4977c7fa] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/vendor/bundle ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [4977c7fa] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/vendor/bundle ]
+ DEBUG [4977c7fa] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [5c623c7a] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/vendor/bundle /home/deploy/deploy_webops/releases/20210606150411/vendor/bundle as deploy@vm-lime.multimediatechnology.at
+ DEBUG [5c623c7a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/vendor/bundle /home/deploy/deploy_webops/releases/20210606150411/vendor/bundle )
+  INFO [5c623c7a] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [9d103837] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/.bundle ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [9d103837] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/.bundle ]
+ DEBUG [9d103837] Finished in 0.100 seconds with exit status 1 (failed).
+ DEBUG [981a4fdb] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/.bundle ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [981a4fdb] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/.bundle ]
+ DEBUG [981a4fdb] Finished in 0.058 seconds with exit status 1 (failed).
+  INFO [45608fd6] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/.bundle /home/deploy/deploy_webops/releases/20210606150411/.bundle as deploy@vm-lime.multimediatechnology.at
+ DEBUG [45608fd6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/.bundle /home/deploy/deploy_webops/releases/20210606150411/.bundle )
+  INFO [45608fd6] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [41fa831e] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/public/system ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [41fa831e] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/public/system ]
+ DEBUG [41fa831e] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [b0dd150d] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/public/system ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [b0dd150d] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/public/system ]
+ DEBUG [b0dd150d] Finished in 0.099 seconds with exit status 1 (failed).
+  INFO [b9cd55d4] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/public/system /home/deploy/deploy_webops/releases/20210606150411/public/system as deploy@vm-lime.multimediatechnology.at
+ DEBUG [b9cd55d4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/public/system /home/deploy/deploy_webops/releases/20210606150411/public/system )
+  INFO [b9cd55d4] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [cf352ec6] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/public/uploads ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [cf352ec6] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/public/uploads ]
+ DEBUG [cf352ec6] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [1bb6ebd2] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/public/uploads ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1bb6ebd2] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/public/uploads ]
+ DEBUG [1bb6ebd2] Finished in 0.059 seconds with exit status 1 (failed).
+  INFO [49d5babb] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/public/uploads /home/deploy/deploy_webops/releases/20210606150411/public/uploads as deploy@vm-lime.multimediatechnology.at
+ DEBUG [49d5babb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/public/uploads /home/deploy/deploy_webops/releases/20210606150411/public/uploads )
+  INFO [49d5babb] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [e0ff920b] Running [ -L /home/deploy/deploy_webops/releases/20210606150411/public/assets ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [e0ff920b] Command: [ -L /home/deploy/deploy_webops/releases/20210606150411/public/assets ]
+ DEBUG [e0ff920b] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [1ccdec8b] Running [ -d /home/deploy/deploy_webops/releases/20210606150411/public/assets ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [1ccdec8b] Command: [ -d /home/deploy/deploy_webops/releases/20210606150411/public/assets ]
+ DEBUG [1ccdec8b] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [5587cd80] Running /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/public/assets as deploy@vm-lime.multimediatechnology.at
+ DEBUG [5587cd80] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210606150411/public/assets )
+  INFO [5587cd80] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [ca9f6ec8] Running /usr/bin/env ln -s /home/deploy/deploy_webops/shared/public/assets /home/deploy/deploy_webops/releases/20210606150411/public/assets as deploy@vm-lime.multimediatechnology.at
+ DEBUG [ca9f6ec8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/shared/public/assets /home/deploy/deploy_webops/releases/20210606150411/public/assets )
+  INFO [ca9f6ec8] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [5949137e] Running if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [5949137e] Command: if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi
+ DEBUG [5949137e] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [a464fc74] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as deploy@vm-lime.multimediatechnology.at
+ DEBUG [a464fc74] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [a464fc74] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [181d29fa] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/deploy_webops/shared/bundle as deploy@vm-lime.multimediatechnology.at
+ DEBUG [181d29fa] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/deploy/deploy_webops/shared/bundle )
+  INFO [181d29fa] Finished in 0.227 seconds with exit status 0 (successful).
+  INFO [42e823d3] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as deploy@vm-lime.multimediatechnology.at
+ DEBUG [42e823d3] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [42e823d3] Finished in 0.275 seconds with exit status 0 (successful).
+ DEBUG [98d0033f] Running if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [98d0033f] Command: if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi
+ DEBUG [98d0033f] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [a8cfaf33] Running $HOME/.rbenv/bin/rbenv exec bundle check as deploy@vm-lime.multimediatechnology.at
+ DEBUG [a8cfaf33] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [a8cfaf33] 	The Gemfile's dependencies are satisfied
+ DEBUG [a8cfaf33] Finished in 0.348 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [7f5f6eac] Running if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [7f5f6eac] Command: if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi
+ DEBUG [7f5f6eac] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [0113afef] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@vm-lime.multimediatechnology.at
+ DEBUG [0113afef] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [0113afef] 	yarn install v1.22.5
+ DEBUG [0113afef] 	[1/4] Resolving packages...
+ DEBUG [0113afef] 	[2/4] Fetching packages...
+ DEBUG [0113afef] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [0113afef] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [0113afef] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [0113afef] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [0113afef] 	[3/4] Linking dependencies...
+ DEBUG [0113afef] 	[4/4] Building fresh packages...
+ DEBUG [0113afef] 	Done in 7.25s.
+ DEBUG [0113afef] 	yarn install v1.22.5
+ DEBUG [0113afef] 	[1/4] Resolving packages...
+ DEBUG [0113afef] 	[2/4] Fetching packages...
+ DEBUG [0113afef] 	info fsevents@2.3.2: The platform "linux" is incompatible with this module.
+ DEBUG [0113afef] 	info "fsevents@2.3.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [0113afef] 	info fsevents@1.2.13: The platform "linux" is incompatible with this module.
+ DEBUG [0113afef] 	info "fsevents@1.2.13" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [0113afef] 	[3/4] Linking dependencies...
+ DEBUG [0113afef] 	[4/4] Building fresh packages...
+ DEBUG [0113afef] 	Done in 2.56s.
+ DEBUG [0113afef] 	Everything's up-to-date. Nothing to do
+  INFO [0113afef] Finished in 12.246 seconds with exit status 0 (successful).
+ DEBUG [0acd9550] Running if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [0acd9550] Command: if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi
+ DEBUG [0acd9550] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [9f78b02b] Running /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210606150411/assets_manifest_backup as deploy@vm-lime.multimediatechnology.at
+ DEBUG [9f78b02b] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mkdir -p /home/deploy/deploy_webops/releases/20210606150411/assets_manifest_backup )
+  INFO [9f78b02b] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [c46b742e] Running /usr/bin/env ls /home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest* as deploy@vm-lime.multimediatechnology.at
+ DEBUG [c46b742e] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest* )
+ DEBUG [c46b742e] 	/home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest-c894afe30eaff4c1d24f2f30df24af5e.json
+ DEBUG [c46b742e] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [c891c629] Running /usr/bin/env ls /home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest* as deploy@vm-lime.multimediatechnology.at
+ DEBUG [c891c629] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls /home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest* )
+ DEBUG [c891c629] 	/home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest-c894afe30eaff4c1d24f2f30df24af5e.json
+ DEBUG [c891c629] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [04b263ba] Running /usr/bin/env cp /home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest-c894afe30eaff4c1d24f2f30df24af5e.json /home/deploy/deploy_webops/releases/20210606150411/assets_manifest_backup as deploy@vm-lime.multimediatechnology.at
+ DEBUG [04b263ba] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env cp /home/deploy/deploy_webops/releases/20210606150411/public/assets/.sprockets-manifest-c894afe30eaff4c1d24f2f30df24af5e.json /home/deploy/deploy_webops/releases/20210606150411/assets_manifest_backup )
+  INFO [04b263ba] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [b3aecd07] Running if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [b3aecd07] Command: if test ! -d /home/deploy/deploy_webops/releases/20210606150411; then echo "Directory does not exist '/home/deploy/deploy_webops/releases/20210606150411'" 1>&2; false; fi
+ DEBUG [b3aecd07] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [f6bbc835] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@vm-lime.multimediatechnology.at
+ DEBUG [f6bbc835] Command: cd /home/deploy/deploy_webops/releases/20210606150411 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [f6bbc835] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [7c58abe4] Running /usr/bin/env ln -s /home/deploy/deploy_webops/releases/20210606150411 /home/deploy/deploy_webops/releases/current as deploy@vm-lime.multimediatechnology.at
+ DEBUG [7c58abe4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ln -s /home/deploy/deploy_webops/releases/20210606150411 /home/deploy/deploy_webops/releases/current )
+  INFO [7c58abe4] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [25b6e0cf] Running /usr/bin/env mv /home/deploy/deploy_webops/releases/current /home/deploy/deploy_webops as deploy@vm-lime.multimediatechnology.at
+ DEBUG [25b6e0cf] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env mv /home/deploy/deploy_webops/releases/current /home/deploy/deploy_webops )
+  INFO [25b6e0cf] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [f04888aa] Running /usr/bin/env pwd as deploy@vm-lime.multimediatechnology.at
+ DEBUG [f04888aa] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env pwd )
+ DEBUG [f04888aa] 	/home/deploy
+ DEBUG [f04888aa] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [09ea675b] Running if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [09ea675b] Command: if test ! -d /home/deploy; then echo "Directory does not exist '/home/deploy'" 1>&2; false; fi
+ DEBUG [09ea675b] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [affc3ba6] Running /usr/bin/env passenger -v as deploy@vm-lime.multimediatechnology.at
+ DEBUG [affc3ba6] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger -v )
+ DEBUG [affc3ba6] 	Phusion Passenger(R) 6.0.8
+ DEBUG [affc3ba6] Finished in 0.205 seconds with exit status 0 (successful).
+  INFO [dc8ac20d] Running /usr/bin/env passenger-config restart-app /home/deploy/deploy_webops --ignore-app-not-running as deploy@vm-lime.multimediatechnology.at
+ DEBUG [dc8ac20d] Command: cd /home/deploy && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env passenger-config restart-app /home/deploy/deploy_webops --ignore-app-not-running )
+ DEBUG [dc8ac20d] 	*** Cleaning stale instance directory /tmp/passenger.L3BSfIM
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.L3BSfIM/.
+*** Cleaning stale instance directory /tmp/passenger.kcsVi11
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.kcsVi11/.
+*** Cleaning stale instance directory /tmp/passenger.mXSR6ur
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.mXSR6ur/.
+*** Cleaning stale instance directory /tmp/passenger.o5TtstP
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.o5TtstP/.
+*** Cleaning stale instance directory /tmp/passenger.572W3gO
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.572W3gO/.
+*** Cleaning stale instance directory /tmp/passenger.Yno5gfr
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.Yno5gfr/.
+*** Cleaning stale instance directory /tmp/passenger.wHdwhEE
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.wHdwhEE/.
+*** Cleaning stale instance directory /tmp/passenger.X90jnHp
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.X90jnHp/.
+Restarting /home/deploy/deploy_webops/current (production)
+  INFO [dc8ac20d] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [2bec96e7] Running /usr/bin/env ls -x /home/deploy/deploy_webops/releases as deploy@vm-lime.multimediatechnology.at
+ DEBUG [2bec96e7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env ls -x /home/deploy/deploy_webops/releases )
+ DEBUG [2bec96e7] 	20210526125850	20210526131141	20210526132249	20210526132921	20210526133032
+20210606150411
+ DEBUG [2bec96e7] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on vm-lime.multimediatechnology.at
+ DEBUG [13f0d35f] Running [ -d /home/deploy/deploy_webops/current ] as deploy@vm-lime.multimediatechnology.at
+ DEBUG [13f0d35f] Command: [ -d /home/deploy/deploy_webops/current ]
+ DEBUG [13f0d35f] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [e2cdaa4e] Running /usr/bin/env readlink /home/deploy/deploy_webops/current as deploy@vm-lime.multimediatechnology.at
+ DEBUG [e2cdaa4e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env readlink /home/deploy/deploy_webops/current )
+ DEBUG [e2cdaa4e] 	/home/deploy/deploy_webops/releases/20210606150411
+ DEBUG [e2cdaa4e] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [ac297778] Running /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210526125850 as deploy@vm-lime.multimediatechnology.at
+ DEBUG [ac297778] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env rm -rf /home/deploy/deploy_webops/releases/20210526125850 )
+  INFO [ac297778] Finished in 0.799 seconds with exit status 0 (successful).
+ DEBUG [0ae02d9a] Running if test ! -d /home/deploy/deploy_webops/releases; then echo "Directory does not exist '/home/deploy/deploy_webops/releases'" 1>&2; false; fi as deploy@vm-lime.multimediatechnology.at
+ DEBUG [0ae02d9a] Command: if test ! -d /home/deploy/deploy_webops/releases; then echo "Directory does not exist '/home/deploy/deploy_webops/releases'" 1>&2; false; fi
+ DEBUG [0ae02d9a] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [32dfc546] Running /usr/bin/env echo "Branch master (at 33e5736fd0deca2aff5cc35a06f70aee09d43b42) deployed as release 20210606150411 by valentin" >> /home/deploy/deploy_webops/revisions.log as deploy@vm-lime.multimediatechnology.at
+ DEBUG [32dfc546] Command: cd /home/deploy/deploy_webops/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.0.1" ; /usr/bin/env echo "Branch master (at 33e5736fd0deca2aff5cc35a06f70aee09d43b42) deployed as release 20210606150411 by valentin" >> /home/deploy/deploy_webops/revisions.log )
+  INFO [32dfc546] Finished in 0.061 seconds with exit status 0 (successful).
