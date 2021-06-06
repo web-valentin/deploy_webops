@@ -57,3 +57,5 @@ gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-passenger'
 gem 'capistrano-rbenv'
+
+gem "ddtrace", "~> 0.49.0"
